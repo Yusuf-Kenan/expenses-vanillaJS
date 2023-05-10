@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Raleway:wght@300;700&family=Roboto+Condensed:wght@300;400;700&family=Shadows+Into+Light&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(41, 41, 41);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+}
+
+.container {
+  min-width: 600px;
+  max-width: 800px;
+  height: 70vh;
+  background-color: darksalmon;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+}
+
+.greet {
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: Courgette;
+  margin-bottom: 25px;
+}
+
+input {
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+}
+
+.greet input {
+  font-size: 20px;
+  font-family: Courgette;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.double {
+  display: flex;
+}
+
+.form-type,
+.form-amount,
+.form-statu {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  min-width: 250px;
+  max-width: 350px;
+  flex-direction: column;
+}
+
+.form-statu {
+  flex-direction: row;
+}
+
+label {
+  width: 100%;
+  padding-left: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(222, 43, 11);
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  background-color: tomato;
+}
+
+.sum-div {
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+
+.total {
+  color: orangered;
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
+  gap: 20px;
+  padding: 8px;
+  height: 100%;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 8px;
+  align-items: center;
+  padding: 8px;
+  background-color: antiquewhite;
+  transition: all 0.5s ease;
+}
+
+.paid h2 {
+  text-decoration: line-through;
+  color: rgb(70, 70, 70);
+}
+
+.list-item h3 {
+  letter-spacing: 2px;
+}
+.list-item h3 span {
+  color: teal;
+}
+
+.paid h3 {
+  color: grey;
+}
+
+.paid h3 span{
+    color: grey;
+  }
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+.buttons img {
+  width: 25px;
+}
+
+.fall {
+  transform: translateY(100px) rotateZ(-20);
+  opacity: 0;
+}
